@@ -14,9 +14,6 @@ data_train, data_test, labels_train, labels_test = train_test_split(data, labels
 #표준편차 Scaler 로드
 scaler = StandardScaler()
 
-# data 학습
-scaler.fit(data_train)
-
 print(data_train)
 data_train_std = scaler.transform(data_train)
 print(data_train_std)
